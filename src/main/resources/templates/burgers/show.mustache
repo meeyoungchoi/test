@@ -15,6 +15,12 @@
     <div class="container">
         <p>이름: {{burger.name}}</p>
         <p>가격: {{burger.price}}</p>
+        <ul>
+          <li>재료</li>
+          {{#burger.ingredientList}}
+          <li>{{name}}</li>
+          {{/burger.ingredientList}}
+        </ul>
     </div>
 
   </body>
